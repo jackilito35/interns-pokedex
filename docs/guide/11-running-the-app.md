@@ -132,6 +132,7 @@ Pokedex server running at http://localhost:3000
 
 1. Open a new terminal and test the API:
 
+**Mac/Linux:**
 ```bash
 # Get Pokemon list
 curl http://localhost:3000/api/pokemon
@@ -145,6 +146,38 @@ curl "http://localhost:3000/api/pokemon/search?q=char"
 # Get types
 curl http://localhost:3000/api/types
 ```
+
+**Windows (PowerShell):**
+```powershell
+# Get Pokemon list
+Invoke-RestMethod http://localhost:3000/api/pokemon
+
+# Get specific Pokemon
+Invoke-RestMethod http://localhost:3000/api/pokemon/pikachu
+
+# Search Pokemon
+Invoke-RestMethod "http://localhost:3000/api/pokemon/search?q=char"
+
+# Get types
+Invoke-RestMethod http://localhost:3000/api/types
+```
+
+**Windows (Command Prompt):**
+```cmd
+REM Get Pokemon list
+curl http://localhost:3000/api/pokemon
+
+REM Get specific Pokemon
+curl http://localhost:3000/api/pokemon/pikachu
+
+REM Search Pokemon
+curl "http://localhost:3000/api/pokemon/search?q=char"
+
+REM Get types
+curl http://localhost:3000/api/types
+```
+
+> **Note:** Windows 10 and later include `curl.exe` by default, so the curl commands should work in Command Prompt.
 
 2. Verify you receive JSON responses
 

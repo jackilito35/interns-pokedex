@@ -147,13 +147,19 @@ node test-config.js
 
 4. Delete the test file after verifying:
 
+**Mac/Linux:**
 ```bash
 rm test-config.js
 ```
 
-On Windows:
+**Windows (Command Prompt):**
 ```cmd
 del test-config.js
+```
+
+**Windows (PowerShell):**
+```powershell
+Remove-Item test-config.js
 ```
 
 ---

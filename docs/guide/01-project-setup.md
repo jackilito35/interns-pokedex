@@ -91,17 +91,17 @@ This reads `package.json` and installs all required packages into `node_modules/
 
 1. Copy the example environment file:
 
-**On Mac/Linux:**
+**Mac/Linux:**
 ```bash
 cp .env.example .env
 ```
 
-**On Windows (Command Prompt):**
+**Windows (Command Prompt):**
 ```cmd
 copy .env.example .env
 ```
 
-**On Windows (PowerShell):**
+**Windows (PowerShell):**
 ```powershell
 Copy-Item .env.example .env
 ```
@@ -122,14 +122,19 @@ MAX_SEARCH_LIMIT=1000
 
 1. Create the directories for your application code:
 
-**On Mac/Linux:**
+**Mac/Linux:**
 ```bash
 mkdir -p src/config src/routes src/controllers src/services src/repositories src/views/partials public/css
 ```
 
-**On Windows (Command Prompt):**
+**Windows (Command Prompt):**
 ```cmd
 mkdir src\config src\routes src\controllers src\services src\repositories src\views\partials public\css
+```
+
+**Windows (PowerShell):**
+```powershell
+mkdir src/config, src/routes, src/controllers, src/services, src/repositories, src/views/partials, public/css
 ```
 
 2. Verify your project structure looks like this:
